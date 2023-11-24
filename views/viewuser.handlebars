@@ -1,12 +1,7 @@
-<div class="container">
-<h5>Nome do produto: {{user.nome_produto}}</h5><br>
-<h5>Nome do fornecedor: {{user.nome_fornecedor}}</h5><br>
-<h5>Data da compra: {{user.data_compra}}</h5><br>
-<h5>Valor da compra: R${{user.valor_compra}},00 reais </h5><br>
-<h5>Valor de venda: R${{user.valor_venda}},00 reais</h5><br>
-<h5>Categoria: {{user.categoria}}</h5><br>
+{{#if auth}}
+
+<h2>O usuário {{user.name}} tem {{user.age}} anos de idade!</h2>
 
 <a href="/">Home</a>
-<a href="/users/add">Adicionar produtos</a>
-</div>
-
+<a href="/users/add">Novo Usuário</a>
+{{/if}}
